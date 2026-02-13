@@ -23,6 +23,7 @@ body {
   border: 2px dashed blue;
   height: 200px;
   flex-grow: 1;
+  flex-shrink: 1;
 }
 
 .box1 {
