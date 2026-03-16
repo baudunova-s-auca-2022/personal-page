@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUCA Women Digital Ecosystem</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Material Symbols -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Sticky Header -->
+    <header class="site-header">
+      <div class="header-container">
+        <div class="logo">
+          <span class="material-symbols-outlined icon">school</span>
+          <span>AUCA <span class="text-primary">Women</span></span>
+        </div>
+
+        <nav class="desktop-nav">
+          <a href="#opportunities">Opportunities</a>
+          <a href="#housing">Housing</a>
+          <a href="#stories">Stories</a>
+          <a href="#support">Support</a>
+        </nav>
+
+        <div class="header-actions">
+          <button class="btn login-btn">Login</button>
+          <button class="btn btn-primary register-btn">Register</button>
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span class="material-symbols-outlined">menu</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Dropdown Navigation -->
+      <nav class="mobile-nav" id="mobileNav">
+        <a href="#opportunities" class="mobile-link">Opportunities</a>
+        <a href="#housing" class="mobile-link">Housing</a>
+        <a href="#stories" class="mobile-link">Stories</a>
+        <a href="#support" class="mobile-link">Support</a>
+        <a href="#" class="mobile-link text-primary">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero section-padding container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="pill-badge">
+              <span
+                style="
+                  display: flex;
+                  height: 8px;
+                  width: 8px;
+                  position: relative;
+                "
+              >
+                <span
+                  style="
+                    animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 50%;
+                    background-color: var(--color-primary);
+                    opacity: 0.75;
+                  "
+                ></span>
+                <span
+                  style="
+                    position: relative;
+                    border-radius: 50%;
+                    height: 8px;
+                    width: 8px;
+                    background-color: var(--color-primary);
+                  "
+                ></span>
+              </span>
+              Empowering Future Leaders
+            </div>
+            <h1 class="hero-title">
+              Professional & Personal Growth for
+              <span class="text-primary">AUCA Women</span>
+            </h1>
+            <p class="hero-desc">
+              A digital ecosystem dedicated to scholarships, safe housing,
+              professional internships, and community support for the next
+              generation of leaders.
+            </p>
+            <div class="hero-actions">
+              <button
+                class="btn btn-primary"
+                onclick="
+                  document
+                    .getElementById('opportunities')
+                    .scrollIntoView({ behavior: 'smooth' })
+                "
+              >
+                Explore Opportunities
+              </button>
+              <button
+                class="btn btn-outline"
+                onclick="
+                  document
+                    .getElementById('live-updates')
+                    .scrollIntoView({ behavior: 'smooth' })
+                "
+              >
+                Join Community
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-image-wrapper">
+            <div class="hero-image-container">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXtPegt8pRXBGvPLEu8QGleqsYAjzXVJXY4DDtCYEWZqESJnSQ8UPFTFbcoPphiwv50yJ8BGragUHvlXVcXaFa9Hu-w5rY9FIKSiVqZkXHbFLT-HVvOAEqeofNhiq3n5NS3VgLTAITwIjfd3UspTGI0NGaWIGGx5UuwWZ_Wly8hDl_01UjZSf-C6Z89TJkwVx2AMOYQc-lBaKEVGvW4Aqt8_X6Nlpx-5nSSUtK7bz1U1_kGSVf1pmajUU96SiE2oc_jlQ-fZ5WLxlJ"
+                alt="Diverse group of female students studying together"
+              />
+            </div>
+            <div class="hero-stat">
+              <span class="material-symbols-outlined stat-icon"
+                >workspace_premium</span
+              >
+              <div>
+                <div class="stat-value">500+</div>
+                <div class="stat-label">Scholarships</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Opportunities Hub Section -->
+      <section class="opportunities section-padding" id="opportunities">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Opportunities Hub</h2>
+              <p class="section-subtitle">
+                Find the perfect scholarship or internship to accelerate your
+                career path.
+              </p>
+            </div>
+            <div class="filter-tabs">
+              <button class="filter-btn active">All</button>
+              <button class="filter-btn">Scholarships (OSI, SILC)</button>
+              <button class="filter-btn">Internships (UN, KICB)</button>
+              <button class="filter-btn">Success Stories</button>
+            </div>
+          </div>
+
+          <div class="card-grid">
+            <!-- Scholarship Card -->
+            <article class="opp-card">
+              <div class="opp-img-wrap">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDADgheQJpdiqchMkC6LSISNKRS98Xv_cjki4SfXfL7QRt6wdsyoNBtmofUS2_raeR-QHfI9wq8IJP6SDsU6o4-jThgp8WRVGruHbwtMo3DTyJZ0MQrq650XyE62ybLXecY5VL8JCmgo2SNFF7dyXe__crB1tr8SbVM8PzSEhqNbn0CvsqMNUbTLmfLHx-T1av2OqJLKTCV_MNTOsZOSdsZ9vI7vAwsFpkW-zYT3xsYXcJJR03NMFKHOiM_A4D-k182iezdmVKiqKLc"
+                  alt="Graduation cap on academic documents"
+                />
+              </div>
+              <span class="opp-tag">Academic Excellence</span>
+              <h3 class="opp-title">OSI Global Scholarship</h3>
+              <p class="opp-desc">
+                Full funding for outstanding female students in social sciences
+                and human rights advocacy.
+              </p>
+              <div class="opp-footer">
+                <span class="opp-meta">Deadline: Oct 15</span>
+                <button class="opp-action">
+                  Apply Now
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1rem"
+                    >arrow_forward</span
+                  >
+                </button>
+              </div>
+            </article>
+
+            <!-- Internship Card -->
+            <article class="opp-card">
+              <div class="opp-img-wrap">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc5mWslq31VY_d1Fj1Nn2Pjl75kLtKGtFLkbe0iAUvUxqelylt17zkyQ0Sz8l4BqUWl2Ne2O-JVFVo0OCjQUYattWLEuaOoozgChkCLkbgBF5_FvhWNT03kF2yJLRxySKMlo8W2G05VkdLGkOkI9SWHY8nq6bgsjVpWWSmkHc-Z-IXy4c7hWSa0w81Z3NOTzLHFEBNanTk1mClqoepR56QpTsGwcNXGo6HJy5vHQTScvVMY43grqNmH4Fx1ojZ2pfzrNtQCc0kmovr"
+                  alt="Professional meeting in modern office"
+                />
+              </div>
+              <span class="opp-tag">Global Impact</span>
+              <h3 class="opp-title">UN Women Internship</h3>
+              <p class="opp-desc">
+                Gain hands-on experience in gender equality policy-making and
+                regional advocacy programs.
+              </p>
+              <div class="opp-footer">
+                <span class="opp-meta">Open Enrollment</span>
+                <button class="opp-action">
+                  Details
+                  <span
+                    class="material-symbols-outlined"
+                    style="font-size: 1rem"
+                    >arrow_forward</span
+                  >
+                </button>
+              </div>
+            </article>
+
+            <!-- Success Highlight -->
+            <div class="success-highlight">
+              <img
+                class="success-bg"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLCBS_U8xitYujUfP7PkJQKickBq4IiXLwwSEwDEgLM1Dqqi1ZsTi7BdpR5ab5__0dQC27PIv4mWC11zQtzhjCh5r-VKxq1B26iUexBpOzcRHO3d1B7f_cAyeqre3JAKQnpppXJlbFHCLy8ipkaWfC_qYXxFODkVsK4MVoYm60vyYe-Mq3c-SpKB6TRsXZ9IQH9dJy4o8zaaxzTm7kykrBbcxWxpLCZhpw0ybrN0-UUjJu04oJ4MGj1dd5vsGKPjHqnh_O84mH1Fvo"
+                alt="Happy student celebrating success"
+              />
+              <div class="success-gradient"></div>
+              <div class="success-content">
+                <div class="quote-icon">
+                  <span class="material-symbols-outlined">format_quote</span>
+                </div>
+                <p class="success-quote">
+                  "The alumni scholarship didn't just fund my degree; it gave me
+                  a network of mentors."
+                </p>
+                <p class="success-author">Aisuluu T., 2023 Graduate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Safe Housing Section -->
+      <section class="housing section-padding" id="housing">
+        <div class="container">
+          <div class="housing-wrapper">
+            <div class="housing-content">
+              <div>
+                <h2 class="housing-title">Safe Housing & Mobility</h2>
+                <p class="housing-desc">
+                  Navigate your life in Bishkek with security and confidence.
+                  From dorm infrastructure to safe transport links.
+                </p>
+              </div>
+              <div class="housing-links">
+                <a href="#" class="housing-link">
+                  <span class="material-symbols-outlined icon"
+                    >verified_user</span
+                  >
+                  <span style="font-weight: 500">Safe Rental Guide</span>
+                </a>
+                <a href="#" class="housing-link">
+                  <span class="material-symbols-outlined icon">commute</span>
+                  <span style="font-weight: 500">Safety Integration</span>
+                </a>
+              </div>
+              <div class="housing-partners">
+                <span class="partners-label">Partners</span>
+                <div class="partner-names">
+                  <span>Yandex Go</span>
+                  <span>GetTransfer</span>
+                </div>
+              </div>
+            </div>
+            <div class="housing-image">
+              <img
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBDGMkirDOBJfz-t0_g5NfcrmPHt04RyoKRqbX1_HEsrLTl3ajtFeyrWyk7KI4q1llERMc8t7ejTC_or7f_0EIpt5a3U9BTDMdu8lv5rX7Ciga91bVrcxRG2fXl6sgWNb56dtT9TGNLtTi3G61TZxk844HDbh6aS6vNkNz0H2IleFxjpJzBAcV4VXHSZIakSA3SzOqjGGmoXviayiTCUkKrf98mMrWR-VJaYbHDhbBP3AXDhphgtxZjbIudygKKDoygRSYxslK49ywB"
+                alt="Modern dormitory room interior"
+              />
+              <div class="housing-overlay"></div>
+              <div class="housing-info-box">
+                <div class="info-title">Dorm vs. Private</div>
+                <div class="info-desc">
+                  Infrastructure comparison: 24/7 security, high-speed Wi-Fi,
+                  and proximity to campus facilities.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Women's Stories (Masonry) Section -->
+      <section class="stories section-padding" id="stories">
+        <div class="container">
+          <div style="text-align: center; margin-bottom: 3rem">
+            <h2 class="section-title">Inspiring Legacies</h2>
+            <p class="section-subtitle">
+              Celebrating our history and the women shaping our future.
+            </p>
+          </div>
+
+          <div class="masonry-grid">
+            <!-- Featured: Fatima Khalil -->
+            <div class="masonry-item story-featured">
+              <div class="story-avatar">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuB4ud2k-BqFnBqfmT7mJPITuY2DOPKif9l8qAs7RBr7opXT_jOVIheBjTKaKXt2P_aIfogKOrsEIlc6cuWGd5xFX3wtF4gAzT3bjPTe-CCyMjSF17wCuhW3L-LDX_Df-JB-6s80mKkGiU4WQc86_-PgY6KAPFXjorKVWxsX-Uyw-EzRPO_V3Y95MJ0T0Y5-Hy53DKIZxnu3JP5WUGzS4Yf6WMd68xIMEQGZCSMFbjzOkPxBxHOk9WcSp9JY0Z3nsRdoGiquUmc_xEBl"
+                  alt="Portrait of Fatima Khalil"
+                />
+              </div>
+              <h3 class="opp-title" style="margin-top: 0">Fatima Khalil</h3>
+              <p class="story-role">The Human Rights Legacy</p>
+              <p class="story-quote">
+                "An AUCA alumna who dedicated her life to human rights. Her
+                courage continues to inspire every student at the university."
+              </p>
+              <button class="story-link">Read the full story</button>
+            </div>
+
+            <!-- Leadership Spotlight -->
+            <div class="masonry-item story-img">
+              <img
+                class="story-img-banner"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2VTkjlfXIbXEofexIVeuYeWu9F4glGd5fAORga1EaRHiM6kf2MGz_lkqmPKKQfZe1X01COvTTAqq6fJDkx0fELLaAIS7b7KoYiNxtYvCOL2aFYiKXWS6IziwYytk7DTWvhOzcsck5qAzw91cBwER06zh1w_1Ys17Tnt9w-wRM_6eQpJX7DFgVnTs54MvNnLr1cCSlXYv8mlbP03xq4eexqODsjx5OuDIZ4Pc4RPgnOef9M2AA9vCwgrKLo9NuoZ2inpN4LwnbrqqY"
+                alt="Woman leader in a meeting"
+              />
+              <h3 style="font-weight: 800; margin-bottom: 0.5rem">
+                Leadership Spotlight
+              </h3>
+              <p style="font-size: 0.875rem; color: var(--color-text-muted)">
+                How Meerim N. pivoted from Liberal Arts to FinTech leadership at
+                KICB.
+              </p>
+            </div>
+
+            <!-- Academic Excellence Highlight -->
+            <div class="masonry-item story-highlight">
+              <span
+                class="material-symbols-outlined"
+                style="font-size: 2.5rem; margin-bottom: 1rem"
+                >emoji_events</span
+              >
+              <h3
+                style="
+                  font-size: 1.5rem;
+                  font-weight: 800;
+                  margin-bottom: 0.5rem;
+                "
+              >
+                Academic Excellence 2024
+              </h3>
+              <p class="story-highlight-subtitle">
+                Recognizing the top 10 female researchers in the Department of
+                Anthropology.
+              </p>
+              <button
+                class="btn"
+                style="
+                  background-color: white;
+                  color: var(--color-primary);
+                  font-size: 0.75rem;
+                  padding: 0.5rem 1rem;
+                "
+              >
+                See Nominees
+              </button>
+            </div>
+
+            <!-- Mentorship Circle -->
+            <div class="masonry-item">
+              <h3 style="font-weight: 800; margin-bottom: 1rem">
+                Mentorship Circle
+              </h3>
+              <div class="mentor-avatars">
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuAqZyZkuGJ9XaMWq-LRwQPidfPF2VB5nTPbr1rZJVG-MeMfxhRQ5e5eWQZibXi6MHbD-YZ48iHF4wD_y76XPbvataAwyr7OERN5m28vLBMKNAxYv407QBKpSVkbjTCk5adc1oamc3lO4cqJMM0PuLHLgHoI2phz7MHZuMosfY-HpDycsII3Qcv4PIWOVYr9vrh4qfC9xmGzO2AvpzSJBlvv0PiEZqFYHfZGJb3Z10TKQzM4JCMG_OaKa5-RUA4qBu0tcK_SbgpaAFHa"
+                  alt="Mentee avatar"
+                />
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOOM9BE3ogLtkPspdrUNplYjEWPV6PSQCyYsxHvCQs54MslJb0Jg0IQ91Iu9vMk3y2WkZNkEv1AGIaK0-Fy_YwtSqVHqHiOuBeSR1hOSEuPIM68ZoR6t26kQFFacL9RFBdCXKV0WqiGaM417Vo0VjFZXFFtoL4L_oonZfHP6UzAVRlFaiQVr6cobPjL8uvyFYVVCk-RUAVG-99O8QCAcrTHIEajpvw0_cY2EpAghe0Uvn1pKzR_qx9pFfu2Ui7YG8ZB_BwduOIk_MU"
+                  alt="Mentee avatar"
+                />
+                <img
+                  src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwKY1_dykjtugejcu9MAin2E_TTfvoTxmC0Zp8zpzmZjptHhJ2JURh0YyJrD7Ep1e9_Qb5GmD894jkO2-P8C88NEPsXO94I5GDI6PIvJLUqGKggdTcXlL9fh6ndNdsFwXzPO9sYi7TKgry3_6WiegKi8NDPSO8RsRN__jc1gJ5S91Pr0UtcO1RB4kuyYFoodzXNnCZt3_D5ra4BX-e12-vxKmKu1tdZU2o9K6GvyWC8MJscozVE0nDmMagqbO5ey0busOFL8RSiy5n"
+                  alt="Mentee avatar"
+                />
+                <div class="mentor-count">+12</div>
+              </div>
+              <p style="font-size: 0.875rem; color: var(--color-text-muted)">
+                30+ matches made this month in the "Mentor Match" program.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Support & Wellness Section -->
+      <section class="support section-padding" id="support">
+        <div class="container support-grid">
+          <div class="support-intro">
+            <h2 class="section-title">Support & Wellness</h2>
+            <p class="section-desc">
+              Access professional resources dedicated to your mental, physical,
+              and academic health.
+            </p>
+            <button class="btn btn-emergency">
+              <span class="material-symbols-outlined">emergency_share</span>
+              Need Help Now?
+            </button>
+          </div>
+
+          <div class="support-cards">
+            <article class="support-card">
+              <div class="support-card-header">
+                <span class="material-symbols-outlined support-icon"
+                  >library_books</span
+                >
+                <h3 class="support-card-title">WARC (Academic Center)</h3>
+              </div>
+              <p class="support-card-desc">
+                Academic writing assistance, tutoring, and research support
+                tailored for all departments.
+              </p>
+              <a href="#warc" class="support-card-action">Book a Session</a>
+            </article>
+
+            <article class="support-card">
+              <div class="support-card-header">
+                <span class="material-symbols-outlined support-icon"
+                  >medical_services</span
+                >
+                <h3 class="support-card-title">Medical Office</h3>
+              </div>
+              <p class="support-card-desc">
+                On-campus health services, vaccinations, and general wellness
+                checkups.
+              </p>
+              <a href="#medical" class="support-card-action">Contact Office</a>
+            </article>
+
+            <article class="support-card">
+              <div class="support-card-header">
+                <span class="material-symbols-outlined support-icon"
+                  >psychology</span
+                >
+                <h3 class="support-card-title">Counseling Center</h3>
+              </div>
+              <p class="support-card-desc">
+                Confidential psychological support and counseling for stress
+                management and personal growth.
+              </p>
+              <a href="#counseling" class="support-card-action"
+                >Schedule Consultation</a
+              >
+            </article>
+
+            <article class="support-card support-card-special">
+              <div class="support-card-header">
+                <span class="material-symbols-outlined support-icon"
+                  >forum</span
+                >
+                <h3 class="support-card-title">Anonymous Advice</h3>
+              </div>
+              <p class="support-card-desc">
+                Ask questions or share concerns safely with peer advisors and
+                professional staff.
+              </p>
+              <button
+                class="btn btn-primary"
+                style="align-self: flex-start; margin-top: auto"
+              >
+                Submit Corner
+              </button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Community Recommendations Section -->
+      <section class="community section-padding" id="community">
+        <div class="container community-container">
+          <div class="community-header">
+            <h2 class="section-title">Crowdsourced Wisdom</h2>
+            <p class="section-subtitle">
+              Student-recommended cafes, study hubs, and services around
+              Bishkek.
+            </p>
+          </div>
+
+          <div class="post-tip-box">
+            <div class="post-tip-form" onsubmit="event.preventDefault()">
+              <input
+                type="text"
+                class="post-tip-input"
+                placeholder="Post a tip (e.g., 'Sierra Cafe is great for late night study sessions')"
+              />
+              <button
+                type="button"
+                class="btn btn-primary"
+                onclick="
+                  alert(
+                    'Demo: Tip submission is just a placeholder and would save to a database in production.',
+                  )
+                "
+              >
+                Post Tip
+              </button>
+            </div>
+          </div>
+
+          <div class="tips-list">
+            <div class="tip-card">
+              <div class="tip-votes">
+                <button class="vote-btn material-symbols-outlined">
+                  expand_less
+                </button>
+                <span class="vote-count">24</span>
+                <button class="vote-btn material-symbols-outlined">
+                  expand_more
+                </button>
+              </div>
+              <div>
+                <div class="tip-meta">
+                  <span
+                    class="pill-badge"
+                    style="
+                      font-size: 0.625rem;
+                      padding: 0.125rem 0.5rem;
+                      letter-spacing: 0;
+                    "
+                    >CAFE</span
+                  >
+                  <span class="tip-author">Posted by Emily J. • 2h ago</span>
+                </div>
+                <p class="tip-content">
+                  Ololohaus has a 20% student discount on weekdays! Perfect for
+                  collaborative projects.
+                </p>
+              </div>
+            </div>
+
+            <div class="tip-card opacity-80">
+              <div class="tip-votes">
+                <button class="vote-btn material-symbols-outlined">
+                  expand_less
+                </button>
+                <span class="vote-count">18</span>
+                <button class="vote-btn material-symbols-outlined">
+                  expand_more
+                </button>
+              </div>
+              <div>
+                <div class="tip-meta">
+                  <span
+                    class="pill-badge"
+                    style="
+                      font-size: 0.625rem;
+                      padding: 0.125rem 0.5rem;
+                      letter-spacing: 0;
+                    "
+                    >SERVICE</span
+                  >
+                  <span class="tip-author">Posted by Sara K. • 5h ago</span>
+                </div>
+                <p class="tip-content">
+                  Use the AUCA ID at the pharmacy on Auezov St for a generic
+                  discount on basic first aid.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Live Updates Section -->
+      <section class="live-updates section-padding" id="live-updates">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <h2 class="section-title">Live Updates</h2>
+              <p class="section-subtitle" style="max-width: 32rem">
+                Real-time insights and community announcements directly from our
+                social channels.
+              </p>
+            </div>
+          </div>
+
+          <div class="updates-grid">
+            <!-- Instagram Update Card -->
+            <article class="update-card">
+              <div class="update-header">
+                <div class="update-source">
+                  <span class="source-icon instagram">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#E1306C"
+                    >
+                      <path
+                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <h3 class="update-title">Instagram Feed</h3>
+                </div>
+                <span class="api-badge">API-powered</span>
+              </div>
+              <div class="update-body">
+                <p class="update-item ig">
+                  Celebrating our new scholarship recipients! #AUCAWomen
+                  #Empowerment
+                </p>
+                <p class="update-item ig">
+                  Sneak peek at the upcoming leadership workshop...
+                </p>
+              </div>
+              <div class="update-footer">
+                <span class="api-badge">API-powered</span>
+              </div>
+            </article>
+
+            <!-- Telegram Update Card -->
+            <article class="update-card">
+              <div class="update-header">
+                <div class="update-source">
+                  <span class="source-icon telegram">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="#0088cc"
+                    >
+                      <path
+                        d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.462 15.598l-1.5 4.462c-.225.675-.487.75-1.012.75-.412 0-.675-.187-1.125-.562l-3.375-2.625-1.875 1.875c-.225.225-.45.375-.712.375-.262 0-.487-.112-.675-.337l-.375-5.25-4.875-1.5c-.6-.187-.637-.6-.037-.825l13.5-5.25c.6-.225.975.037.825.675l-2.775 8.212z"
+                      ></path>
+                    </svg>
+                  </span>
+                  <h3 class="update-title">Telegram Announcements</h3>
+                </div>
+                <span class="api-badge">API-powered</span>
+              </div>
+              <div class="update-body">
+                <p class="update-item tg">
+                  Academic advising sessions for Spring 2024 are now open for
+                  booking.
+                </p>
+                <p class="update-item tg">
+                  Check the Hub for 3 new internship openings at international
+                  NGOs.
+                </p>
+              </div>
+              <div class="update-footer">
+                <span class="material-symbols-outlined" style="font-size: 1rem"
+                  >schedule</span
+                >
+                <span>Updated 15 mins ago</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="material-symbols-outlined icon">school</span>
+              <span>AUCA <span class="text-primary">Women</span></span>
+            </div>
+            <p class="footer-desc">
+              Dedicated to fostering a secure, professional, and empowering
+              environment for all women at the American University of Central
+              Asia.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="footer-column-title">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="#opportunities">Opportunities Hub</a></li>
+              <li><a href="#housing">Safe Rental Guide</a></li>
+              <li><a href="#support">WARC Services</a></li>
+              <li><a href="#community">Community Tips</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="footer-column-title">Institutional Alignment</h4>
+            <ul class="footer-links">
+              <li><a href="#">AUCA Official Site</a></li>
+              <li><a href="#">Academic Policies</a></li>
+              <li><a href="#">Code of Conduct</a></li>
+              <li><a href="#">Campus Map</a></li>
+            </ul>
+            <div class="footer-location">
+              <span>Location: Bishkek</span>
+            </div>
+          </div>
+
+          <div class="contact-info">
+            <h4 class="footer-column-title">Contact</h4>
+            <p>7/2 Auezov St, Bishkek</p>
+            <p style="margin-bottom: 1.5rem">Kyrgyzstan 720060</p>
+            <a href="mailto:support@auca.kg" class="contact-email"
+              >support@auca.kg</a
+            >
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 AUCA Women's Digital Ecosystem. All Rights Reserved.
+          </p>
+          <div class="legal-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Accessibility</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Interactive Scripts -->
+    <script>
+      // Mobile Menu Toggle
+      const menuBtn = document.getElementById("mobileMenuBtn");
+      const mobileNav = document.getElementById("mobileNav");
+      const mobileLinks = document.querySelectorAll(".mobile-link");
+
+      menuBtn.addEventListener("click", () => {
+        mobileNav.classList.toggle("active");
+        const icon = menuBtn.querySelector(".material-symbols-outlined");
+        if (mobileNav.classList.contains("active")) {
+          icon.textContent = "close";
+        } else {
+          icon.textContent = "menu";
+        }
+      });
+
+      // Close mobile menu when clicking a link
+      mobileLinks.forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileNav.classList.remove("active");
+          menuBtn.querySelector(".material-symbols-outlined").textContent =
+            "menu";
+        });
+      });
+    </script>
+  </body>
+</html>
