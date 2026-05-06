@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <button onclick="toggleTheme()" style="position: fixed; top: 0">
+      Switch Style
+    </button>
+    <button class="buttonMenu"><i class="fa fa-bars"></i></button>
+    <div class="container">
+      <div class="box1">
+        <div class="top-social">
+          <i class="fa fa-facebook"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-instagram"></i>
+          <span class="slogan">Heaven starts with us!</span>
+        </div>
+        <div class="top-contact">
+          <span>
+            <img
+              class="contact-icon"
+              src="https://cdn.imgchest.com/files/15eacfa40311.png"
+              alt="Email icon"
+            />
+            vpmanas@airport.kg
+          </span>
+          <span>
+            <img
+              class="contact-icon"
+              src="https://cdn.imgchest.com/files/e1482de3bc2e.png"
+              alt="Phone icon"
+            />
+            +996 /312/ 693109
+          </span>
+        </div>
+      </div>
+      <div class="box2">
+        <img src="https://cdn.imgchest.com/files/44404bc976b3.jpg" alt="Logo" />
+      </div>
+      <div class="box3">
+        <div class="category-card category-one">
+          <img
+            src="https://cdn.imgchest.com/files/5eb50c42ea64.png"
+            alt="About company picture"
+          />
+        </div>
+        <div class="category-card category-two">
+          <img
+            src="https://cdn.imgchest.com/files/0f6af92148f6.png"
+            alt="Passenges picture"
+          />
+        </div>
+        <div class="category-card category-three">
+          <img
+            src="https://cdn.imgchest.com/files/2f72e8dc3ddb.png"
+            alt="Services picture"
+          />
+        </div>
+        <div class="category-card category-four">
+          <img
+            src="https://cdn.imgchest.com/files/76509d3a1fe1.jpg"
+            alt="Press service picture"
+          />
+        </div>
+      </div>
+      <div class="box4">
+        <div class="news-block">
+          <h2>NEWS</h2>
+          <div class="news-line"></div>
+          <div class="news-item">
+            <div class="news-img blue-news">
+              <img
+                src="https://cdn.imgchest.com/files/98d818eb2622.png"
+                alt="News image 1"
+              />
+            </div>
+            <div class="news-text">
+              <p class="date">11TH OF NOVEMBER</p>
+              <h3>
+                Which countries and cities can I fly to from Manas International
+                Airport in autumn-winter 2022?
+              </h3>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-img blue-news">
+              <img
+                src="https://cdn.imgchest.com/files/4ebcd7f8f735.png"
+                alt="News image 2"
+              />
+            </div>
+            <div class="news-text">
+              <p class="date">10TH OF NOVEMBER</p>
+              <h3>
+                Which countries and cities can I fly to from Osh International
+                Airport in autumn-winter 2022?
+              </h3>
+            </div>
+          </div>
+          <div class="news-item">
+            <div class="news-img bird-news">
+              <img
+                src="https://cdn.imgchest.com/files/d0be0744b8db.png"
+                alt="News image 3"
+              />
+            </div>
+            <div class="news-text">
+              <p class="date">10TH OF NOVEMBER</p>
+              <h3>
+                Employees of Issyk-Kul airport rescued a bird listed in the Red
+                Book
+              </h3>
+            </div>
+          </div>
+          <div class="all-news">ALL NEWS <i class="fa fa-angle-right"></i></div>
+        </div>
+      </div>
+      <div class="box5">
+        <ul class="main-menu">
+          <li class="mam">JSC "MAM"</li>
+          <li class="divider-1">|</li>
+          <li class="bishkek">BISHKEK</li>
+          <li class="divider-2">|</li>
+          <li class="osh">OSH</li>
+          <li class="divider-3">|</li>
+          <li class="issyk-kul">ISSYK-KUL</li>
+          <li class="divider-4">|</li>
+          <li class="karakol">KARAKOL</li>
+          <li class="divider-5">|</li>
+          <li class="batken">BATKEN</li>
+        </ul>
+      </div>
+      <div class="box6">
+        <div class="right-nav">
+          <span>RU</span>
+          <i class="fa fa-search"></i>
+        </div>
+      </div>
+      <div class="box7">
+        <div class="flights-widget">
+          <div class="flight-tabs">
+            <div class="flight-tab active-tab">
+              <img
+                class="tab-plane departure-plane"
+                src="https://cdn.imgchest.com/files/aa89ce1e6095.png"
+                alt="plane icon"
+              />
+              <span>DEPARTURE</span>
+            </div>
+            <div class="flight-tab not-active-tab">
+              <img
+                class="tab-plane arrival-plane"
+                src="https://cdn.imgchest.com/files/f47d2ee80320.png"
+                alt="plane icon"
+              />
+              <span>ARRIVAL</span>
+            </div>
+            <div class="flight-tab full-list">
+              <span>FULL LIST</span>
+            </div>
+          </div>
+          <div class="flight-inner">
+            <div class="flight-search">
+              <input type="text" placeholder="Flight number" />
+              <button><i class="fa fa-search"></i></button>
+            </div>
+            <div class="flight-grid">
+              <div class="flight-header">
+                <div>AIRLINE</div>
+                <div>FLIGHT</div>
+                <div>ROUTE</div>
+                <div>TIME PLAN</div>
+                <div>STATUS</div>
+                <div>TIME <br />FACT</div>
+                <div>TYPE</div>
+              </div>
+              <div class="flight-body">
+                <div class="flight-row">
+                  <div>
+                    <img
+                      class="airline-logo"
+                      src="https://cdn.imgchest.com/files/915d7da85c2e.jpg"
+                      alt="Turkish Airlines logo"
+                    />
+                  </div>
+                  <div>TK347</div>
+                  <div>Istanbul</div>
+                  <div>03.40</div>
+                  <div><span class="status">sent</span></div>
+                  <div>03.40</div>
+                  <div>regular</div>
+                </div>
+                <div class="flight-row">
+                  <div>
+                    <img
+                      class="airline-logo"
+                      src="https://cdn.imgchest.com/files/915d7da85c2e.jpg"
+                      alt="Turkish Airlines logo"
+                    />
+                  </div>
+                  <div>TK6233</div>
+                  <div>Istanbul</div>
+                  <div>05.00</div>
+                  <div><span class="status">sent</span></div>
+                  <div>05.04</div>
+                  <div>regular</div>
+                </div>
+                <div class="flight-row">
+                  <div>
+                    <img
+                      class="airline-logo flydubai-logo"
+                      src="https://cdn.imgchest.com/files/cf055d40151f.jpg"
+                      alt="FlyDubai logo"
+                    />
+                  </div>
+                  <div>FZ1462</div>
+                  <div>Dubai</div>
+                  <div>06.01</div>
+                  <div><span class="status">sent</span></div>
+                  <div>06.37</div>
+                  <div>regular</div>
+                </div>
+                <div class="flight-row">
+                  <div>
+                    <img
+                      class="airline-logo ural-logo"
+                      src="https://cdn.imgchest.com/files/25d59795e54e.png"
+                      alt="Ural Airlines logo"
+                    />
+                  </div>
+                  <div>U62986</div>
+                  <div>Yekaterinburg</div>
+                  <div>05.45</div>
+                  <div><span class="status">sent</span></div>
+                  <div>05.58</div>
+                  <div>regular</div>
+                </div>
+                <div class="flight-row">
+                  <div>
+                    <img
+                      class="airline-logo aeroflot-logo"
+                      src="https://cdn.imgchest.com/files/af78e7225288.png"
+                      alt="Aeroflot logo"
+                    />
+                  </div>
+                  <div>SU1883</div>
+                  <div>Moscow</div>
+                  <div>06.05</div>
+                  <div><span class="status">sent</span></div>
+                  <div>06.10</div>
+                  <div>regular</div>
+                </div>
+                <div class="flight-row">
+                  <div>
+                    <img
+                      class="airline-logo pegasus-logo"
+                      src="https://cdn.imgchest.com/files/aee38b5311c5.png"
+                      alt="Pegasus logo"
+                    />
+                  </div>
+                  <div>PC701</div>
+                  <div>Istanbul</div>
+                  <div>06.20</div>
+                  <div><span class="status">sent</span></div>
+                  <div>06.26</div>
+                  <div>regular</div>
+                </div>
+                <div class="flight-row">
+                  <div>
+                    <img
+                      class="airline-logo ural-logo"
+                      src="https://cdn.imgchest.com/files/25d59795e54e.png"
+                      alt="Ural Airlines logo"
+                    />
+                  </div>
+                  <div>U62804</div>
+                  <div>Moscow</div>
+                  <div>07.00</div>
+                  <div><span class="status">sent</span></div>
+                  <div>07.10</div>
+                  <div>regular</div>
+                </div>
+              </div>
+            </div>
+            <div class="flight-footer">
+              <span>
+                <img
+                  src="https://cdn.imgchest.com/files/856a95d00ad4.png"
+                  alt="calendar icon"
+                />
+                15-11-22</span
+              >
+              <span
+                ><img
+                  src="https://cdn.imgchest.com/files/9fe3e7831ae5.png"
+                  alt="clock icon"
+                />
+                17:47</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      const buttonMenu = document.querySelector(".buttonMenu");
+      const boxFive = document.querySelector(".box5");
+      buttonMenu.addEventListener("click", () => {
+        console.log("yes, hamburger clicked!");
+        buttonMenu.classList.toggle("mobileMenu");
+        boxFive.classList.toggle("mobileMenu");
+      });
+    </script>
+    <script>
+      function toggleTheme() {
+        var theme = document.getElementsByTagName("link")[0];
+        if (theme.getAttribute("href") == "style.css") {
+          theme.setAttribute("href", "style2.css");
+        } else {
+          theme.setAttribute("href", "style.css");
+        }
+      }
+    </script>
+  </body>
+</html>
